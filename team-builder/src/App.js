@@ -4,6 +4,9 @@ import Form from './components/Form'
 import TeamMembers from './components/TeamMembers'
 
 function App() {
+
+  //Team Members initial state
+
   const [teamMembers, addTeamMember] = useState([
     {
       id: 1,
@@ -13,6 +16,21 @@ function App() {
         "react 1"
     }
   ]);
+
+  //Add team member
+  
+  const addNewTeamMember = teamMember => {
+    const newTeamMember = {
+      id: Date.now(),
+      name: teamMember.name,
+      email: teamMember.email,
+      role: teamMember.role
+    }
+    addTeamMember([...teamMembers, newTeamMember])
+  }
+
+
+  //EDITING
 
   const [memberToEdit, setMemberToEdit] = useState({});
 
@@ -32,17 +50,8 @@ function App() {
     })
   }
 
-  
 
-  const addNewTeamMember = teamMember => {
-    const newTeamMember = {
-      id: Date.now(),
-      name: teamMember.name,
-      email: teamMember.email,
-      role: teamMember.role
-    }
-    addTeamMember([...teamMembers, newTeamMember])
-  }
+
   return (
     <div className="App">
       <Form addNewTeamMember={addNewTeamMember} memberToEdit={memberToEdit} finishEdit={finishEdit} setMemberToEdit={setMemberToEdit} />
