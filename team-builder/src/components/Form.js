@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+
 
 function TeamMemberForm(props){
     const [teamMember, setTeamMember] = useState({ id:0, name: '', email: '', role: '' });
@@ -42,37 +44,42 @@ function TeamMemberForm(props){
 
     return (
         <div className="Form">
-            <form onSubmit={event => handleSubmit(event)}>
-                <label>
-                    Name:
-                    <input
-                        type="text"
-                        name="name"
-                        value={teamMember.name}
-                        onChange={event => handleChange(event)}
-                    />
-                </label>
-                <label>
-                    Email:
-                    <input
-                        type="text"
+            <Form onSubmit={event => handleSubmit(event)}>
+                <FormGroup className="formGroup">
+                    <Label className="formLabel" for="Name">Name</Label><br></br>
+                        <Input
+                            className="formInput"
+                            placeholder="John Doe"
+                            type="text"
+                            name="name"
+                            value={teamMember.name}
+                            onChange={event => handleChange(event)}
+                        />
+                </FormGroup>
+                <FormGroup className="formGroup">
+                <Label className="formLabel" for="Email">Email </Label><br></br>
+                    <Input
+                        className="formInput"
+                        placeholder="abc@abc.com"
+                        type="email"
                         name="email"
                         value={teamMember.email}
                         onChange={event => handleChange(event)}
                     />
-                </label>
-                <label>
-                    What role are you?
-                    <select value={teamMember.role} name="role" onChange={handleChange}>
+                
+                </FormGroup>
+                <FormGroup className="formGroup">
+                    <Label className="formLabel" for="Role">What is your role?</Label><br></br>
+                    <Input className="formInput" type="select" value={teamMember.role} name="role" onChange={handleChange}>
                         <option defaultValue="">Select an option</option>
-                        <option value="ui developer">UI Developer</option>
-                        <option value="react 1">React 1</option>
-                        <option value="react 2">React 2</option>
-                        <option value="backend developer">Backend Developer</option>
-                    </select>
-                </label>
-                <button>Submit!</button>
-            </form>
+                        <option value="UI DEVELOPER">UI Developer</option>
+                        <option value="REACT 1">React 1</option>
+                        <option value="REACT 2">React 2</option>
+                        <option value="BACKEND DEVELOPER">Backend Developer</option>
+                    </Input>
+                </FormGroup>
+                <Button className="submitBtn">Submit!</Button>
+            </Form>
         </div>
     )
 }

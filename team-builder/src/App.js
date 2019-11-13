@@ -13,12 +13,12 @@ function App() {
       name: "Dustin",
       email: "thedustingraham@gmail.com",
       role:
-        "react 1"
+        "REACT 1"
     }
   ]);
 
   //Add team member
-  
+
   const addNewTeamMember = teamMember => {
     const newTeamMember = {
       id: Date.now(),
