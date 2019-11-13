@@ -1,19 +1,44 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function TeamMemberForm(props){
-    const [teamMember, setTeamMember] = useState({ name: '', email: '', role: '' });
+    const [teamMember, setTeamMember] = useState({ id:0, name: '', email: '', role: '' });
 
+    const memberToEdit = props.memberToEdit;
+
+    function isEmpty(obj) {
+        for(let key in obj) {
+            if(obj.hasOwnProperty(key))
+            return false;
+        }
+        return true;
+    }
+
+    const finishEdit = props.finishEdit;
 
     const handleSubmit = event => {
         event.preventDefault();
         setTeamMember({ name: '', email: '', role: '' });
-        props.addNewTeamMember(teamMember)
+        
+        if(isEmpty(memberToEdit) === true) {
+            props.addNewTeamMember(teamMember)
+        } else {
+            finishEdit(teamMember)
+        }
     };
 
     const handleChange = event => {
         setTeamMember({ ...teamMember, [event.target.name]: event.target.value });
       };
+
+    useEffect(() => {
+        if(isEmpty(memberToEdit) === true){
+            setTeamMember({ name: '', email: '', role: '' });
+        } else {
+            setTeamMember({ id: [memberToEdit.id], name: [memberToEdit.name], email: [memberToEdit.email], role: [memberToEdit.role] });
+        }
+        
+    }, [memberToEdit])
 
     return (
         <div className="Form">
