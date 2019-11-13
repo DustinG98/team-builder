@@ -47,6 +47,7 @@ function TeamMemberForm(props){
             <Form onSubmit={event => handleSubmit(event)}>
                 <FormGroup className="formGroup">
                     <Label className="formLabel" for="Name">Name</Label><br></br>
+                    <hr></hr>
                         <Input
                             className="formInput"
                             placeholder="John Doe"
@@ -58,6 +59,7 @@ function TeamMemberForm(props){
                 </FormGroup>
                 <FormGroup className="formGroup">
                 <Label className="formLabel" for="Email">Email </Label><br></br>
+                <hr></hr>
                     <Input
                         className="formInput"
                         placeholder="abc@abc.com"
@@ -70,6 +72,7 @@ function TeamMemberForm(props){
                 </FormGroup>
                 <FormGroup className="formGroup">
                     <Label className="formLabel" for="Role">What is your role?</Label><br></br>
+                    <hr></hr>
                     <Input className="formInput" type="select" value={teamMember.role} name="role" onChange={handleChange}>
                         <option defaultValue="">Select an option</option>
                         <option value="UI DEVELOPER">UI Developer</option>

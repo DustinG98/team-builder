@@ -12,6 +12,7 @@ function TeamMembers(props){
                     <Card body outline color="danger">
                         <CardTitle className="teamMemberName">{member.name}</CardTitle>
                         <CardSubtitle className="teamMemberRole">{member.role}</CardSubtitle>
+                        <hr></hr>
                         <CardSubtitle className="teamMemberEmail">{member.email}</CardSubtitle>
                         <Button className="editBtn" color="danger" onClick={() => setEditMember(member)}>Edit</Button>
                     </Card>

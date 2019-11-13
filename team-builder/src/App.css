@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   margin: 2%;
+
 }
 
 .App-logo {
@@ -27,12 +28,12 @@
 }
 
 .teamMember{
-  border: 2px solid blue;
+  border: 2px solid #7a34eb;
   display: flex;
   padding: 25px;
   margin: 5%;
   border-radius: 10px;
-  background-color: lightcyan;
+  background-color: #d2f6ff;
   width: 250px;
 }
 
@@ -41,10 +42,10 @@
 }
 
 .Form{
-  border: 2px solid blue;
+  border: 2px solid #7a34eb;
   border-radius: 10px;
   padding: 25px;
-  background-color: lightcyan;
+  background-color: #d2f6ff;
   width: 400px;
 }
 
@@ -63,7 +64,7 @@
 }
 
 .submitBtn{
-  background-color: blue;
+  background-color: #7a34eb;
   border-radius: 10px;
   color: white;
   padding: 5px 10px;
@@ -80,11 +81,15 @@
 }
 
 .editBtn{
-  background-color: blue;
+  background-color: #7a34eb;
   border-radius: 10px;
   color: white;
   padding: 5px 10px;
   font-weight: 700;
   margin-top: 25px;
   width: 100%;
+}
+hr{
+  border: 1px solid #7a34eb6b;
+  width: 50%;
 }
