@@ -8,6 +8,7 @@ function TeamMemberForm(props){
 
     const memberToEdit = props.memberToEdit;
 
+    
     function isEmpty(obj) {
         for(let key in obj) {
             if(obj.hasOwnProperty(key))
@@ -15,6 +16,8 @@ function TeamMemberForm(props){
         }
         return true;
     }
+
+    const buttonText = (isEmpty(memberToEdit)) ? "Submit" : `Update ${memberToEdit.name}`;
 
     const finishEdit = props.finishEdit;
 
@@ -81,7 +84,7 @@ function TeamMemberForm(props){
                         <option value="BACKEND DEVELOPER">Backend Developer</option>
                     </Input>
                 </FormGroup>
-                <Button className="submitBtn">Submit!</Button>
+                <Button className="submitBtn">{buttonText}</Button>
             </Form>
         </div>
     )

@@ -5,6 +5,8 @@ function TeamMembers(props){
     function setEditMember(member){
         props.editMember(member)
     }
+
+    
     return (
         <div className="teamMembers">
             {props.members.map(member => {
