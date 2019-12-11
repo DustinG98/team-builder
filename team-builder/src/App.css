@@ -28,12 +28,12 @@
 }
 
 .teamMember{
-  border: 2px solid #7a34eb;
+  border: 2px solid #280069;
   display: flex;
   padding: 25px;
   margin: 5%;
   border-radius: 10px;
-  background-color: #d2f6ff;
+  background-color: #f4eeff;
   width: 250px;
 }
 
@@ -42,11 +42,12 @@
 }
 
 .Form{
-  border: 2px solid #7a34eb;
+  border: 2px solid #280069;
   border-radius: 10px;
   padding: 25px;
-  background-color: #d2f6ff;
+  background-color: #f4eeff;
   width: 400px;
+  color: #280069;
 }
 
 .formGroup{
@@ -61,35 +62,52 @@
   padding: 5px 15px;
   margin: 10px 0;
   width: 350px;
+  border: 2px solid #280069;
+  background-color: #e7d9ff;
 }
 
 .submitBtn{
-  background-color: #7a34eb;
+  background-color: #280069;
   border-radius: 10px;
-  color: white;
+  color: #e7d9ff;
   padding: 5px 10px;
   font-weight: 700;
+  border: 2px solid #e7d9ff;
+}
+.submitBtn:hover{
+  background-color: #e7d9ff;
+  color: #280069;
+  border: 2px solid #280069;
 }
 
 .teamMemberName{
   font-weight: 700;
   font-size: 20px;
+  color: #280069;
 }
 .teamMemberRole{
   font-size: 12px;
   margin-bottom: 10px;
+  color: #280069;
 }
 
 .editBtn{
-  background-color: #7a34eb;
+  background-color: #280069;
   border-radius: 10px;
-  color: white;
+  color: #e7d9ff;
   padding: 5px 10px;
   font-weight: 700;
   margin-top: 25px;
   width: 100%;
+  border: 2px solid #e7d9ff;
+}
+.editBtn:hover{
+  background-color: #e7d9ff;
+  color: #280069;
+  border: 2px solid #280069;
 }
 hr{
-  border: 1px solid #7a34eb6b;
+  border: 1px solid #280069;
+  background-color: #280069;
   width: 50%;
 }
