@@ -35,10 +35,15 @@
   border-radius: 10px;
   background-color: #f4eeff;
   width: 250px;
+  justify-content: center;
+  align-items: center;
 }
 
 .teamMembers{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .Form{
