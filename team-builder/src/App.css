@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2%;
+
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.teamMember{
+  border: 2px solid #280069;
+  display: flex;
+  padding: 25px;
+  margin: 5%;
+  border-radius: 10px;
+  background-color: #f4eeff;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
+
+.teamMembers{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.Form{
+  border: 2px solid #280069;
+  border-radius: 10px;
+  padding: 25px;
+  background-color: #f4eeff;
+  width: 400px;
+  color: #280069;
+}
+
+.formGroup{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.formLabel{
+  font-weight: 700;
+}
+.formInput{
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin: 10px 0;
+  width: 350px;
+  border: 2px solid #280069;
+  background-color: #e7d9ff;
+}
+
+.submitBtn{
+  background-color: #280069;
+  border-radius: 10px;
+  color: #e7d9ff;
+  padding: 5px 10px;
+  font-weight: 700;
+  border: 2px solid #e7d9ff;
+}
+.submitBtn:hover{
+  background-color: #e7d9ff;
+  color: #280069;
+  border: 2px solid #280069;
+}
+
+.teamMemberName{
+  font-weight: 700;
+  font-size: 20px;
+  color: #280069;
+}
+.teamMemberRole{
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: #280069;
+}
+
+.editBtn{
+  background-color: #280069;
+  border-radius: 10px;
+  color: #e7d9ff;
+  padding: 5px 10px;
+  font-weight: 700;
+  margin-top: 25px;
+  width: 200px;
+  border: 2px solid #e7d9ff;
+}
+.editBtn:hover{
+  background-color: #e7d9ff;
+  color: #280069;
+  border: 2px solid #280069;
+}
+hr{
+  border: 1px solid #280069;
+  background-color: #280069;
+  width: 50%;
+}
